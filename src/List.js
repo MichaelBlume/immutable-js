@@ -162,6 +162,10 @@ export class List extends IndexedCollection {
     );
   }
 
+  takeLast(amount) {
+    return this.slice(-amount);
+  }
+
   __iterator(type, reverse) {
     var index = 0;
     var values = iterateList(this, reverse);

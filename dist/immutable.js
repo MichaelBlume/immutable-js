@@ -2189,6 +2189,10 @@
 	    );
 	  };
 
+	  List.prototype.takeLast = function(amount) {
+	    return this.slice(-amount);
+	  };
+
 	  List.prototype.__iterator = function(type, reverse) {
 	    var index = 0;
 	    var values = iterateList(this, reverse);
